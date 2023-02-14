@@ -1,0 +1,41 @@
+.container{
+    @media (min-width:992px){
+        max-width : 1180px;
+    }    
+}
+
+
+.foter{
+    div{
+        opacity: 0.5;
+        color: black !important;
+    }
+    ul li{
+        opacity: 0.75;
+        color: black !important;
+    }
+}
+
+
+
+@media (max-width:770px){
+    .foter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        ul{
+            text-align: center;
+            padding-inline:0;
+        }
+    }
+}
+
+
+@media (max-width:598px){
+    .offer-content{
+        font-size: 30px !important;
+    }
+}

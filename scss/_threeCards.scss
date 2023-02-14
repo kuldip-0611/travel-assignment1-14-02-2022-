@@ -1,0 +1,65 @@
+.three-cards{
+    padding:60px 30px ;
+    margin-top: -50px;
+    border-radius: 30px;
+    
+   
+
+   
+    .main-content1{
+        height: 154px;
+        border: 1px solid gray;
+        border-radius: 25px;
+    
+        .air-btn img{
+            border: 1px dashed rgb(0, 0, 0);
+            border-radius: 25px;
+            padding: 8px;
+        }
+        .input-tag{
+            width: 50px;
+        }
+        input::placeholder{
+            font-weight: map-get($map: $font-weight, $key: regular );
+            color: black;
+            font-size: 16px;
+        }
+        
+       
+    }
+    .card-btn{
+        height: 154px;
+        width: 154px;
+        background-color: $secondary-color;
+        border-radius: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            margin: auto;
+
+        }
+        @media (max-width:992px){
+            margin: auto !important;
+        }
+    }
+
+   
+    @media (max-width:598px){
+
+        
+        .three-cards{
+            width: 70% !important;
+        }
+        .main-content1{
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 250px !important;
+            gap: 20px !important;
+           
+        }
+    }
+   
+}

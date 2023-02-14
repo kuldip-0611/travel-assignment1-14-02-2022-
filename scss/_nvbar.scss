@@ -1,0 +1,134 @@
+.main{
+    
+    background: url('../assets/pexels-francesco-ungaro-2835436\ 1.svg');
+    height: 85vh;
+    min-height: 730px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    .nv-name{
+        font-size:48px ;
+        font-weight: map-get($map: $font-weight, $key: normal );
+
+    }
+    .nv-link
+    {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;  
+       
+    }
+
+    .btn-blog{
+        @include forbtn($primary-color,$secondary-color);
+        padding: 0px 30px;
+        border: none;
+    }
+    .main-content{
+        
+        margin-top: 8em;
+        
+
+        .ctnr-1{
+            font-size: 64px;
+            font-weight: map-get($map: $font-weight, $key: regular );
+            line-height: 96px;
+        }
+
+        @media (max-width:1200px){
+            
+            .ctnr-1{
+                font-size: 50px !important;
+                line-height: 80px;
+            }
+           
+        }
+        
+        @media (max-width:900px){
+            .ctnr-1{
+                font-size: 40px !important;
+                line-height: 60px;
+            }
+            
+           
+        }
+        @media (max-width:600px){
+            .ctnr-1{
+                font-size: 30px !important;
+                line-height: 40px;
+            }
+           
+        }
+        @media (max-width:400px){
+            .ctnr-1{
+                font-size: 25px !important;
+                line-height: 30px;
+            }
+           
+        }
+    }
+    .ctnr-2{
+        font-size: 24px ;
+        font-weight: map-get($map: $font-weight, $key: normal ) !important;
+        line-height: 200%;
+
+        
+    }
+    @media (max-width:1200px){
+        .ctnr-2{
+            font-size: 20px !important;
+            line-height: 200%;
+        }
+       
+    }
+    @media (max-width:900px){
+        .main{
+            min-height: 680px !important;
+        }
+        .ctnr-2{
+            font-size: 16px !important;
+            line-height: 150%;
+        }
+       
+    }
+    @media (max-width:600px){
+        .ctnr-2{
+            font-size: 12px !important;
+            line-height: 100%;
+        }
+       
+    }
+    @media (max-width:400px){
+        .ctnr-2{
+            font-size: 10px !important;
+            line-height: 100%;
+        }
+       
+    }
+   
+}
+@media (max-width:900px){
+    
+   
+    .nv-link{
+       font-size: 12px !important;
+       }
+  
+}
+@media (max-width: 900px){
+.main {
+    min-height: 730px;
+    height: 81vh;
+    }
+}
+@media (max-width: 993px){
+    .main{
+        height: 130vh;
+    }
+    .nv-link{
+     text-align: center !important;
+    }
+    .btn-blog{
+        margin: 00 auto;
+    }
+} 
+ 

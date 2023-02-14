@@ -1,0 +1,6 @@
+@mixin forbtn($bgc,$clr){
+    background-color: $bgc;
+    color: $clr;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,132 @@
+.offer-content{
+    margin-top: 200px;
+    font-size: 48px;
+    font-weight: map-get($map: $font-weight, $key: normal);
+    margin-bottom: 100px;
+}
+
+.card{
+    border-radius: 50px;
+    .img-text {
+        img{
+            margin-left: 10px;
+            width: 85% !important; 
+            padding: 21px 0px 0px 27px ;
+        }
+        .v-text{
+            writing-mode: vertical-lr;
+            letter-spacing: 0.5em;
+            text-align: center;
+            word-spacing: 15px;
+            color: gray;
+            margin-left: 10px;
+         
+         }
+    }
+    .btn-text{
+        p{
+            font-size: 14px;
+        }
+        .relax-btn{
+            border: none;
+            border-radius: 50px !important;
+            padding: 3px 14px !important;
+            @include forbtn($lpink-color,$pink-color);
+            font-size: 10px ;
+        
+            button{
+                border-radius: 30px;
+            }
+        }
+        .adventure-btn{
+            @include forbtn($lpurple-color,$purple-color);
+            border: none;
+            border-radius: 50px !important;
+            padding: 3px 14px !important;
+            font-size: 10px;
+        }
+        
+    }
+    .price-tag{
+        font-weight: 700;
+    }
+    .book-btn button{
+        border: none;
+        @include forbtn($lblue-color,$blue-color);
+    }
+    @media (max-width:434px){
+    
+        .one-line{
+            .card{
+                width: 100%;
+    
+                img{
+                    width: 80%;
+                }
+            }
+            .v-text{
+                letter-spacing: 0.2em;
+                
+                font-size: 13px;
+            }
+            .btn-text{
+                margin-left: 15px !important;
+            }
+            .loga-saga{
+                margin-left: 15px !important;
+            }
+            .text-btn{
+                margin-left: 6px !important;
+            }
+        }
+    }
+    @media (max-width:550px) {
+        .main{
+            height: 75vh;
+        }
+        .offer-content{
+            font-size: 20px !important;
+        }
+        .v-text{
+            margin-top: 40px !important;
+            letter-spacing: 0.2em ;
+        }
+    
+        .img-text img{
+            padding: 10px !important;
+        }
+    }
+}
+@media (max-width:992px){
+    .text-btn{
+        justify-content: flex-start !important;
+        gap: 300px;
+        margin-left: 50px;
+
+    }
+
+}
+@media (max-width:773px){
+    .text-btn{
+       
+        gap: 150px;
+       
+
+    }
+
+}
+@media (max-width:470px){
+    .text-btn{
+       
+        gap: 40px;
+       
+
+    }
+
+}
+
+
+
+
+
+
